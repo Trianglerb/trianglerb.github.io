@@ -1,0 +1,62 @@
+require 'builder'
+
+set :meta, {
+  title: 'Turtles',
+  url: 'http://i.like.turtles',
+}
+
+page '/sitemap.xml', layout: false
+page '/feed.xml', layout: false
+
+activate :syntax
+set :syntax_theme, Rouge::Themes::Base16
+activate :autoprefixer
+
+set :ga_key, 'UA-XXXXXXX-Y'
+
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+set :partials_dir, 'partials'
+
+Time.zone = 'Stockholm'
+
+activate :blog do |blog|
+  blog.sources = "blog/:year-:month-:day-:title.html"
+  blog.permalink = '{year}/{title}.html'
+  blog.taglink = "tags/{tag}.html"
+  blog.default_extension = ".md"
+  blog.paginate = true
+  blog.per_page = 10
+end
+
+ignore '/calendar.html'
+
+configure :build do
+  activate :relative_assets
+  activate :directory_indexes
+  activate :asset_hash
+  activate :minify_html, remove_input_attributes: false
+  activate :minify_css
+  activate :minify_javascript
+  activate :image_optim
+  activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
+end
+
+# activate :deploy do |deploy|
+#   deploy.build_before = true
+#   deploy.method = :rsync
+#   deploy.host = ''
+#   deploy.user = ''
+#   deploy.path = ''
+#   deploy.flags = '-rzc --delete'
+# end
+
+configure :development do
+  activate :livereload
+end
+
+after_configuration do
+  @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+  sprockets.append_path File.join "#{root}", @bower_config["directory"]
+end

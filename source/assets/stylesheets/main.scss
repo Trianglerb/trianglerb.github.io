@@ -1,0 +1,26 @@
+//= require _erb/_syntax
+
+@import 'vendor/normalize';
+@import 'bourbon';
+@import 'base/base';
+@import 'neat';
+
+#delete-me {
+  background: $base-background-color;
+  color: #FFF;
+  font-size: 3em;
+  font-weight: 300;
+  height: 100vh;
+  line-height: $base-line-height * .7;
+  padding-top: 45vh;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  span {
+    font-weight: 300;
+    font-size: .4em;
+    display: block;
+    margin-left: 4em;
+  }
+}

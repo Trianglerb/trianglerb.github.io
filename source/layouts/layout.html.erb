@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title><%= current_page.data.title %></title>
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <%= stylesheet_link_tag 'main' %>
+  </head>
+  <body>
+    <%= yield %>
+    <%= javascript_include_tag 'main' %>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+gem 'builder', '~> 3.0.0'
+gem 'middleman', '~>3.2.1'
+gem 'middleman-autoprefixer'
+gem 'middleman-blog'
+gem 'middleman-deploy'
+gem 'middleman-imageoptim', '~> 0.0.4'
+gem 'middleman-livereload', '~> 3.2.0'
+gem 'middleman-minify-html'
+gem 'middleman-neat', '~> 0.0.4'
+gem 'middleman-syntax'
+gem 'rake', '~> 10.1.0'
