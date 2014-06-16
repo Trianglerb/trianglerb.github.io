@@ -1,11 +1,11 @@
 require 'builder'
 
-
 page '/sitemap.xml', layout: false
 page '/feed.xml', layout: false
 
 activate :syntax, line_numbers: true
 activate :autoprefixer
+activate :dotenv
 
 set :ga_key, 'UA-XXXXXXX-Y'
 
