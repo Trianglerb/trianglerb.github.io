@@ -1,9 +1,5 @@
 require 'builder'
 
-set :meta, {
-  title: 'Turtles',
-  url: 'http://i.like.turtles',
-}
 
 page '/sitemap.xml', layout: false
 page '/feed.xml', layout: false
@@ -18,6 +14,10 @@ set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :partials_dir, 'partials'
+set :meta, {
+  title: 'Turtles',
+  url: 'http://i.like.turtles',
+}
 
 Time.zone = 'Stockholm'
 
