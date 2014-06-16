@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <% page_data = current_page.data %>
+    <% keywords = page_data.keywords ? page_data.keywords : data.seo.keywords %>
+    <% description = page_data.description ? page_data.description : data.seo.description %>
+    <title><%= page_data.title %></title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="keyword" content="<%= keywords.join(',') %>">
+    <meta name="description" content="<%= description %>">
+    <%= stylesheet_link_tag 'main' %>
+  </head>
+  <body>
+    <%= yield %>
+    <%= javascript_include_tag 'main' %>
+  </body>
+</html>
