@@ -4,16 +4,18 @@ require 'builder'
 page '/sitemap.xml', layout: false
 page '/feed.xml', layout: false
 
-activate :syntax
-set :syntax_theme, Rouge::Themes::Base16
+activate :syntax, line_numbers: true
 activate :autoprefixer
 
 set :ga_key, 'UA-XXXXXXX-Y'
 
+set :markdown, fenced_code_blocks: true, smartypants: true, with_toc_data: true
+set :markdown_engine, :redcarpet
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :partials_dir, 'partials'
+set :syntax_theme, Rouge::Themes::Base16
 set :meta, {
   title: 'Turtles',
   url: 'http://i.like.turtles',
