@@ -6,10 +6,12 @@
     <% page_data = current_page.data %>
     <% keywords = page_data.keywords ? page_data.keywords : data.seo.keywords %>
     <% description = page_data.description ? page_data.description : data.seo.description %>
+    <% author = page_data.author ? page_data.author : data.seo.author %>
     <title><%= page_data.title %></title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="keyword" content="<%= keywords.join(',') %>">
+    <meta name="keywords" content="<%= keywords.join(',') %>">
     <meta name="description" content="<%= description %>">
+    <meta name="author" content="<%= author %>">
     <%= stylesheet_link_tag 'main' %>
   </head>
   <body>
