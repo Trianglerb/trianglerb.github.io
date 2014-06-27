@@ -21,6 +21,9 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.2.17)
+    dotenv (0.11.1)
+      dotenv-deployment (~> 0.0.2)
+    dotenv-deployment (0.0.2)
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
@@ -78,6 +81,9 @@ GEM
       middleman-core (>= 3.0.0)
       net-sftp
       ptools
+    middleman-dotenv (1.0.0)
+      dotenv (~> 0.7)
+      middleman-core (~> 3.0)
     middleman-imageoptim (0.0.4)
       image_optim (~> 0.8.0)
       middleman-core (>= 3.0)
@@ -119,6 +125,7 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.2)
       ffi (>= 0.5.0)
+    redcarpet (3.1.2)
     rouge (1.3.3)
     sass (3.2.18)
     sprockets (2.12.0)
@@ -150,9 +157,11 @@ DEPENDENCIES
   middleman-autoprefixer
   middleman-blog
   middleman-deploy
+  middleman-dotenv (~> 1.0)
   middleman-imageoptim (~> 0.0.4)
   middleman-livereload (~> 3.2.0)
   middleman-minify-html
   middleman-neat (~> 0.0.4)
   middleman-syntax
   rake (~> 10.1.0)
+  redcarpet
