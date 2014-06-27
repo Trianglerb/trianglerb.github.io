@@ -7,8 +7,6 @@ activate :syntax, line_numbers: true
 activate :autoprefixer
 activate :dotenv
 
-set :ga_key, 'UA-XXXXXXX-Y'
-
 set :markdown, fenced_code_blocks: true, smartypants: true, with_toc_data: true
 set :markdown_engine, :redcarpet
 set :css_dir, 'assets/stylesheets'
