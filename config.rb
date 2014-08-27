@@ -43,14 +43,9 @@ configure :build do
   activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
 end
 
-# activate :deploy do |deploy|
-#   deploy.build_before = true
-#   deploy.method = :rsync
-#   deploy.host = ''
-#   deploy.user = ''
-#   deploy.path = ''
-#   deploy.flags = '-rzc --delete'
-# end
+activate :deploy do |deploy|
+  deploy.method = :git
+end
 
 configure :development do
   activate :livereload
