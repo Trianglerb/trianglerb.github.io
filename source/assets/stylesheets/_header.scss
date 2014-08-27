@@ -1,0 +1,42 @@
+header {
+  @include outer-container;
+  padding: $small-y 0;
+}
+
+.logo {
+  width: em(64);
+  float: left;
+  margin-right: $base-x;
+}
+
+.logo-hgroup {
+  float: left;
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    color: $light-font-color;
+    font-family: $serif;
+    font-size: em(16);
+    font-weight: 400;
+  }
+}
+
+.header-links {
+  float: right;
+
+  li {
+    float: left;
+    margin-left: $large-x;
+    padding: 1.25em 0;
+  }
+
+  a {
+    color: $light-font-color;
+    font-size: $small-font-size;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

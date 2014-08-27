@@ -1,0 +1,19 @@
+.container {
+  @include outer-container;
+}
+
+.narrow-container {
+  @extend %narrow-container;
+}
+
+.embed-container {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  iframe, object, embed {
+    @include size(100%);
+    @include position(absolute, 0px 0 0 0px);
+  }
+}

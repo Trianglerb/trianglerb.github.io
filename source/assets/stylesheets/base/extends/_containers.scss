@@ -1,0 +1,5 @@
+%narrow-container {
+  @extend outer-container;
+  margin: 0 auto;
+  max-width: em(680);
+}

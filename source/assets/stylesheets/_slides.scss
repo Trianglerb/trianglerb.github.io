@@ -1,0 +1,37 @@
+.slides {
+  @extend %narrow-container;
+  margin-bottom: $large-y * 2;
+  position: relative;
+}
+
+.slide {
+  border-bottom: $light-border;
+  font-family: $serif;
+  padding: $small-y $small-x;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  h5 {
+    font-family: $serif;
+    font-size: em(18);
+    margin-bottom: .25em;
+    padding-left: $slides-date-column-width;
+  }
+}
+
+.slide-date {
+  @include position(absolute, 0 0 0 $small-x);
+  color: $red;
+  font-size: $small-font-size;
+  width: $slides-date-column-width;
+}
+
+.slide-author {
+  color: $light-font-color;
+  font-size: $small-font-size;
+  font-style: italic;
+  margin-bottom: 0;
+  padding-left: $slides-date-column-width;
+}

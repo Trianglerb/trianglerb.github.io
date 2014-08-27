@@ -1,11 +1,23 @@
+// Bitters v0.10.0
+// http://bitters.bourbon.io
+
+// Variables
 @import 'variables';
+
+// Mixins
 @import 'mixins/flash';
+
+// Extends
 @import 'extends/button';
 @import 'extends/clearfix';
+@import 'extends/containers';
 @import 'extends/hide-text';
-@import 'extends/layout';
-@import 'typography';
-@import 'forms';
-@import 'tables';
-@import 'lists';
+
+// Typography and Elements
 @import 'buttons';
+@import 'flashes';
+@import 'forms';
+@import 'layout';
+@import 'lists';
+@import 'tables';
+@import 'typography';

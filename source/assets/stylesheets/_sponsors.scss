@@ -1,0 +1,34 @@
+.sponsors {
+  @include outer-container;
+
+  ul {
+    @include row;
+    padding: $large-y 0;
+  }
+
+  p {
+    margin-bottom: $large-y * 2;
+    opacity: .4;
+    text-align: center;
+  }
+}
+
+.sponsor {
+  @include span-columns(3);
+
+  a {
+    @include hide-text;
+    @include retina-image(thoughtbot, 150px 150px, $asset-pipeline: true);
+    @include transition(opacity .1s linear);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 150px;
+    opacity: .2;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -48,7 +48,7 @@ activate :deploy do |deploy|
 end
 
 configure :development do
-  activate :livereload
+  activate :livereload, port: 35740
 end
 
 after_configuration do

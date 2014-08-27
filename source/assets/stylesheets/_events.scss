@@ -1,0 +1,54 @@
+.event {
+  background: $lighter-gray;
+  border-bottom: $base-border;
+  display: table;
+  margin-bottom: $large-y * 2;
+  position: relative;
+  width: 100%;
+}
+
+.event-information, .event-map {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.event-information-wrapper {
+  padding: $large-y $large-x;
+  margin: 0 auto;
+  max-width: em(608);
+}
+
+.event-date {
+  font-size: 2.25em;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.event-location {
+  display: inline-block;
+  margin-bottom: $base-y;
+}
+
+.event-title {
+  font-family: $serif;
+  margin-bottom: $small-y;
+}
+
+.event-description {
+  color: $light-font-color;
+  font-family: $serif;
+  font-size: em(17);
+  line-height: 1.8;
+  margin-bottom: $base-y;
+}
+
+.event-button {
+  background: $base-link-color;
+  border-radius: $base-border-radius;
+  color: white;
+  display: inline-block;
+  font-weight: 600;
+  line-height: normal;
+  padding: 1em 3em;
+}

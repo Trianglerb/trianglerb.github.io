@@ -1,0 +1,15 @@
+footer {
+  background-color: $slate;
+  padding: $large-y 0;
+
+  p {
+    text-align: center;
+    color: rgba(white, .5);
+  }
+
+  a {
+    font-style: italic;
+    color: white;
+    font-family: $serif;
+  }
+}

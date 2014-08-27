@@ -27,7 +27,10 @@ h3 {
 }
 
 h4 {
-  font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
+  color: $light-font-color;
+  font-size: $base-font-size * .8125; // 16 * .8125 = 13px
+  margin-bottom: $large-y;
+  text-transform: uppercase;
 }
 
 h5 {

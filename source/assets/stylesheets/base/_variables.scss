@@ -1,31 +1,37 @@
 // Typography
-$sans-serif: 'Helvetica Neue', $helvetica;
-$serif: $georgia;
+$sans-serif: 'Roboto', $helvetica;
+$serif: 'PT Serif', $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 
 // Sizes
 $base-font-size: 1em;
+$small-font-size: em(13);
 $base-line-height: $base-font-size * 1.5;
-$unitless-line-height: $base-line-height / ($base-line-height * 0 + 1);
+$unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $header-line-height: $base-font-size * 1.25;
 $base-border-radius: em(3);
+$slides-date-column-width: 8rem;
 
 // Colors
-$blue: #477DCA;
+$blue: #33aad9;
 $dark-gray: #333;
+$slate: #2e3641;
+$red:#d0464e;
 $medium-gray: #999;
 $light-gray: #DDD;
+$lighter-gray: #fafaf8;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
+$green: #5fc782;
 $light-green: #E6EFC2;
-$emerald: #44C55F;
 
 // Background Color
-$base-background-color: $emerald;
+$base-background-color: white;
 
 // Font Colors
 $base-font-color: $dark-gray;
+$light-font-color: rgba($base-font-color, .7);
 $base-accent-color: $blue;
 
 // Link Colors
@@ -36,6 +42,9 @@ $hover-button-color: $hover-link-color;
 
 // Border color
 $base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+$light-border-color: lighten($light-gray, 5);
+$light-border: 1px solid $light-border-color;
 
 // Flash Colors
 $alert-color: $light-yellow;
@@ -52,3 +61,10 @@ $form-box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
+
+$base-x: $gutter;
+$small-x: $gutter / 2;
+$large-x: $gutter * 2;
+$base-y: $base-line-height;
+$small-y: $base-line-height / 2;
+$large-y: $base-line-height * 2;
