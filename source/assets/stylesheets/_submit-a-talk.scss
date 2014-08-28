@@ -1,0 +1,12 @@
+.submit-a-talk {
+  background: white;
+  padding: $large-y 0;
+
+  @include media($medium-screen-up) {
+    padding: ($large-y * 3) 0;
+  }
+
+  textarea {
+    height: $large-y * 6;
+  }
+}

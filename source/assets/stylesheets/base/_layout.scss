@@ -1,9 +1,9 @@
-.container {
-  @include outer-container;
-}
-
 .narrow-container {
   @extend %narrow-container;
+}
+
+.container {
+  @extend %outer-container;
 }
 
 .embed-container {
@@ -16,4 +16,8 @@
     @include size(100%);
     @include position(absolute, 0px 0 0 0px);
   }
+}
+
+.wrapper {
+  @extend %wide-container;
 }

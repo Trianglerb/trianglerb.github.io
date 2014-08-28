@@ -1,22 +1,34 @@
 .event {
   background: $lighter-gray;
-  border-bottom: $base-border;
-  display: table;
-  margin-bottom: $large-y * 2;
-  position: relative;
-  width: 100%;
+  margin-bottom: 0;
 }
 
-.event-information, .event-map {
-  display: table-cell;
-  width: 50%;
-  vertical-align: middle;
+.event-box {
+  @extend %narrow-container;
+  background: white;
+  padding: $base-y 0 0;
+
+  @include media($medium-screen-up) {
+    @include position(relative, -($base-y *4) 0 0 0);
+    border: $base-border;
+    padding-top: 0;
+  }
 }
 
-.event-information-wrapper {
-  padding: $large-y $large-x;
-  margin: 0 auto;
-  max-width: em(608);
+.event-information {
+  padding: $base-y $small-x;
+
+  @include media($medium-screen-up) {
+    padding: $large-y $large-x;
+  }
+
+  h4 {
+    margin-bottom: 0;
+
+    @include media($medium-screen-up) {
+      margin-bottom: $base-y;
+    }
+  }
 }
 
 .event-date {
@@ -50,5 +62,23 @@
   display: inline-block;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: $base-y;
   padding: 1em 3em;
+  text-align: center;
+  width: 100%;
+
+  @include media($medium-screen-up) {
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  &:hover, &:focus {
+    color: white;
+    background-color: lighten($base-link-color, 3%);
+  }
+
+  &:active {
+    color: white;
+    background-color: darken($base-link-color, 3%);
+  }
 }

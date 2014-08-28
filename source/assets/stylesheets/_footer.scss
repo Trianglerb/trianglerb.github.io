@@ -1,15 +1,14 @@
 footer {
-  background-color: $slate;
   padding: $large-y 0;
 
   p {
+    color: $light-font-color;
     text-align: center;
-    color: rgba(white, .5);
   }
 
   a {
-    font-style: italic;
-    color: white;
+    color: $base-font-color;
     font-family: $serif;
+    font-style: italic;
   }
 }

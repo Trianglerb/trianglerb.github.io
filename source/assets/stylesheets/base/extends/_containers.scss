@@ -1,5 +1,15 @@
+%outer-container {
+  @include outer-container;
+  padding: 0 $small-x;
+}
+
 %narrow-container {
-  @extend outer-container;
+  @extend %outer-container;
   margin: 0 auto;
-  max-width: em(680);
+  max-width: $medium-screen;
+}
+
+%wide-container {
+  @include outer-container;
+  max-width: em(1280);
 }

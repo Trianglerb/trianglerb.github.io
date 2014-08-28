@@ -1,13 +1,15 @@
 .slides {
-  @extend %narrow-container;
-  margin-bottom: $large-y * 2;
+  background: white;
   position: relative;
+  padding-top: $large-y;
+  padding-bottom: $large-y;
 }
 
 .slide {
   border-bottom: $light-border;
   font-family: $serif;
   padding: $small-y $small-x;
+  position: relative;
 
   &:last-child {
     border-bottom: none;
@@ -17,15 +19,30 @@
     font-family: $serif;
     font-size: em(18);
     margin-bottom: .25em;
-    padding-left: $slides-date-column-width;
+
+    a {
+      color: $base-font-color;
+
+      &:hover, &:active, &:focus {
+        color: $hover-link-color;
+      }
+    }
+
+    @include media($medium-screen-up) {
+      padding-left: $slides-date-column-width;
+    }
   }
 }
 
 .slide-date {
-  @include position(absolute, 0 0 0 $small-x);
   color: $red;
   font-size: $small-font-size;
+  margin-bottom: $small-y;
   width: $slides-date-column-width;
+
+  @include media($medium-screen-up) {
+    @include position(absolute, 0 0 0 $small-x);
+  }
 }
 
 .slide-author {
@@ -33,5 +50,8 @@
   font-size: $small-font-size;
   font-style: italic;
   margin-bottom: 0;
-  padding-left: $slides-date-column-width;
+
+  @include media($medium-screen-up) {
+    padding-left: $slides-date-column-width;
+  }
 }

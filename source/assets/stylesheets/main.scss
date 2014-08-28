@@ -4,14 +4,14 @@
 
 @import 'vendor/normalize';
 @import 'bourbon';
-@import 'grid-settings';
 @import 'neat';
+@import 'grid-settings';
 @import 'base/base';
 
 @import 'banner';
 @import 'events';
 @import 'footer';
 @import 'header';
-@import 'quote';
 @import 'slides';
 @import 'sponsors';
+@import 'submit-a-talk';

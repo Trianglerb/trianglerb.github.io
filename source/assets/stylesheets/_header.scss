@@ -1,18 +1,31 @@
 header {
-  @include outer-container;
-  padding: $small-y 0;
+  @extend %outer-container;
+  padding-top: $small-y;
+
+  @media screen and (min-width: 565px) {
+    padding-bottom: $small-y;
+  }
 }
 
 .logo {
-  width: em(64);
+  opacity: .8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.logo img {
   float: left;
   margin-right: $base-x;
+  width: em(64);
 }
 
 .logo-hgroup {
   float: left;
 
   h1 {
+    color: $base-font-color;
     font-size: 2em;
   }
 
@@ -25,12 +38,21 @@ header {
 }
 
 .header-links {
-  float: right;
+  clear: left;
+
+  @media screen and (min-width: 565px) {
+    clear: none;
+    float: right;
+  }
 
   li {
     float: left;
-    margin-left: $large-x;
     padding: 1.25em 0;
+    margin-left: $base-x;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
   a {
@@ -38,5 +60,9 @@ header {
     font-size: $small-font-size;
     font-weight: 600;
     text-transform: uppercase;
+
+    &:hover, &:active, &:focus {
+      color: $hover-link-color;
+    }
   }
 }

@@ -1,31 +1,52 @@
 .sponsors {
-  @include outer-container;
+  background: $slate;
+  padding-bottom: $large-y;
+  padding-top: $large-y;
 
   ul {
-    @include row;
-    padding: $large-y 0;
+    @extend %outer-container;
+    padding-top: $large-y;
+    padding-bottom: $large-y;
+  }
+
+  h4 {
+    color: rgba(white, .8);
+    margin-bottom: $small-y;
   }
 
   p {
-    margin-bottom: $large-y * 2;
-    opacity: .4;
-    text-align: center;
+    color: white;
+    font-family: $serif;
+    font-style: italic;
   }
 }
 
 .sponsor {
-  @include span-columns(3);
+  background: white;
+  border: 1px solid black;
+  margin: 0 auto $base-y;
+  padding: $base-y $base-x;
+
+  @include media($medium-screen-up) {
+    @include span-columns(3 of 12);
+  }
 
   a {
     @include hide-text;
-    @include retina-image(thoughtbot, 150px 150px, $asset-pipeline: true);
+    @include retina-image(thoughtbot, $background-size: 150px 150px, $asset-pipeline: true);
     @include transition(opacity .1s linear);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
     height: 150px;
-    opacity: .2;
+    margin-bottom: $base-y;
+    width: 100%;
+
+    @include media($medium-screen-up) {
+      margin-bottom: 0;
+      opacity: 0.8;
+    }
 
     &:hover {
       opacity: 1;

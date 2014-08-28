@@ -1,0 +1,23 @@
+<header>
+  <% link_to '/' do %>
+    <div class="logo">
+      <%= image_tag 'logo.png' %>
+      <div class="logo-hgroup">
+        <h1>Triangle.rb</h1>
+        <h2>The triangle's ruby meetup</h2>
+      </div>
+    </div>
+  <% end %>
+
+  <ul class="header-links">
+    <li>
+      <%= link_to 'Meetup', 'http://www.meetup.com/raleighrb/' %>
+    </li>
+    <li>
+     <%= link_to 'Discourse', 'http://discourse.triangleruby.com/' %>
+    </li>
+    <li>
+     <%= link_to 'Submit Talk', '/submit.html' %>
+    </li>
+  </ul>
+</header>
