@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (3.2.17)
+    activesupport (3.2.19)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     addressable (2.3.6)
@@ -41,7 +41,7 @@ GEM
       tilt
     hike (1.2.3)
     http_parser.rb (0.5.3)
-    i18n (0.6.9)
+    i18n (0.6.11)
     image_optim (0.8.1)
       fspath (~> 2.0.3)
       image_size (~> 1.1.2)
@@ -85,9 +85,9 @@ GEM
       middleman-core (>= 3.0.0)
       net-sftp
       ptools
-    middleman-dotenv (1.0.0)
+    middleman-dotenv (1.1.0)
       dotenv (~> 0.7)
-      middleman-core (~> 3.0)
+      middleman-core (>= 3.2)
     middleman-imageoptim (0.0.4)
       image_optim (~> 0.8.0)
       middleman-core (>= 3.0)
@@ -122,9 +122,9 @@ GEM
       rack (>= 1.0)
     rake (10.1.1)
     rb-fsevent (0.9.4)
-    rb-inotify (0.9.3)
+    rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    rb-kqueue (0.2.2)
+    rb-kqueue (0.2.3)
       ffi (>= 0.5.0)
     redcarpet (3.1.2)
     rouge (1.3.3)
@@ -160,7 +160,7 @@ DEPENDENCIES
   middleman-autoprefixer
   middleman-blog
   middleman-deploy
-  middleman-dotenv (~> 1.0)
+  middleman-dotenv (~> 1.1)
   middleman-imageoptim (~> 0.0.4)
   middleman-livereload (~> 3.2.0)
   middleman-minify-html
