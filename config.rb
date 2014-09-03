@@ -40,10 +40,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
-
-  activate :imageoptim do |image_optim_options|
-    image_optim_options.pngout_options = false
-  end
 end
 
 activate :deploy do |deploy|
