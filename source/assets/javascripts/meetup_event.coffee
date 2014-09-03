@@ -8,6 +8,11 @@ class window.MeetupEvent
   eventUrl: -> @eventData.event_url
 
   description: -> @eventData.description
+  speakerName: ->
+    pattern = /^<p><b>Speaker<\/b>:(.*)<\/p> <p><b>S/
+    match = @description().match(pattern)
+
+    match?[1] || ''
 
   address: ->
     [
@@ -23,6 +28,9 @@ class window.MeetupEvent
 
   date: ->
     @_time().format('MMM DD, YYYY')
+
+  monthYear: ->
+    @_time().format('MMMM YYYY')
 
   venueName: ->
     @_venue().name
