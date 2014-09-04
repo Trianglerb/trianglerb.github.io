@@ -1,75 +1,11 @@
 ---
 title: 'Triangle.rb'
 ---
-<section class="banner">
-  <div class="container">
-    <h3>A place for sharing ideas.</h3>
-    <p>Triangle.rb is <i>the</i> Ruby user group of Raleigh, Durham, and Chapel Hill.</p>
-    <p>Come make friends and drink beer. Join us in our pursuit of humane
-    programming.</p>
-  </div>
-</section>
 
-<section class="event" data-role="event">
-  <div class="event-box">
-    <div class="event-information">
-      <h4>Join us at our next meetup</h4>
-      <p class="event-date" data-role="date">event date</p>
-      <span class="event-location">
-        <span data-role="time">event time</span> at <a href=#" data-role="venue-name">Venue name</a>
-      </span>
-      <h5 class="event-title" data-role="name">Meetup Name</h5>
-      <p class="event-description" data-role="description">Event Description</p>
-      <a href="#" class="event-button" data-role="rsvp-link">RSVP on Meetup</a>
-    </div>
+<%= partial "banner" %>
 
-    <div class="event-map">
-      <div class="embed-container">
-        <iframe
-          data-role="map"
-          src=""
-          width="600"
-          height="450"
-          frameborder="0"
-          style="border:0"></iframe>
-      </div>
-    </div>
-  </div>
-</section>
+<%= partial "next_meetup" %>
 
-<section class="slides">
-  <div class="narrow-container">
-    <h4>Past Meetups</h4>
+<%= partial "past_meetups" %>
 
-    <ol class="meetups">
-      <li class="slide" style="display:none">
-        <span class="slide-date" data-role="date">January 2055</span>
-        <h5>
-          <a href="#" data-role="name">Meetup name</a>
-        </h5>
-        <p class="slide-author" data-role="speaker-name">Speaker Name</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<section class="sponsors">
-  <div class="narrow-container">
-    <h4>You're in Good Company</h4>
-    <p>These kind folks buy us pizza and beer. You should say hi.</p>
-  </div>
-  <ul>
-    <li class="sponsor">
-      <a href="#">thoughtbot</a>
-    </li>
-    <li class="sponsor">
-      <a href="#">thoughtbot</a>
-    </li>
-    <li class="sponsor">
-      <a href="#">thoughtbot</a>
-    </li>
-    <li class="sponsor">
-      <a href="#">thoughtbot</a>
-    </li>
-  </ul>
-</section>
+<%= partial "sponsors" %>
