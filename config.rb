@@ -13,6 +13,7 @@ set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :partials_dir, 'partials'
+set :relative_links, true
 set :syntax_theme, Rouge::Themes::Base16
 set :meta, {
   title: 'Turtles',
