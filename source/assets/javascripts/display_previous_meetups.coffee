@@ -14,7 +14,6 @@ updateEventInformation = (element, event) ->
   setDate(element, event.monthYear())
   setName(element, event.name())
   setUrl(element, event.eventUrl())
-  setSpeaker(element, event.speakerName())
 
 setDate = (element, date) ->
   setRoleText(element, 'date', date)
@@ -24,9 +23,6 @@ setName = (element, name) ->
 
 setUrl = (element, url) ->
   element.find("[data-role='name']").prop('href', url)
-
-setSpeaker = (element, speakerName) ->
-  setRoleText(element, 'speaker-name', speakerName)
 
 setRoleText = (element, role, text) ->
   element.find("[data-role='#{role}']").text(text)
