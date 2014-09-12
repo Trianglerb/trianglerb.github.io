@@ -41,7 +41,7 @@
   width: $slides-date-column-width;
 
   @include media($medium-screen-up) {
-    @include position(absolute, 0 0 0 $small-x);
+    @include position(absolute, 1em 0 0 $small-x);
   }
 }
 
