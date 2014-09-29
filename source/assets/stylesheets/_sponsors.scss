@@ -32,8 +32,7 @@
   }
 
   a {
-    @include hide-text;
-    @include retina-image(thoughtbot, $background-size: 150px 150px, $asset-pipeline: true);
+    // @include retina-image(thoughtbot, $background-size: 150px 150px, $asset-pipeline: true);
     @include transition(opacity .1s linear);
     background-position: 50%;
     background-repeat: no-repeat;
@@ -42,6 +41,7 @@
     height: 150px;
     margin-bottom: $base-y;
     width: 100%;
+    position: relative;
 
     @include media($medium-screen-up) {
       margin-bottom: 0;
@@ -50,6 +50,12 @@
 
     &:hover {
       opacity: 1;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
     }
   }
 }
