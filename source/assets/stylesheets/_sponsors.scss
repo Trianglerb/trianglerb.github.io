@@ -24,23 +24,18 @@
 .sponsor {
   background: white;
   border: 1px solid black;
-  margin: 0 auto $base-y;
+  margin-bottom: $base-y;
   padding: $base-y $base-x;
 
   @include media($medium-screen-up) {
     @include span-columns(3 of 12);
+    @include omega(4n);
   }
 
   a {
-    // @include retina-image(thoughtbot, $background-size: 150px 150px, $asset-pipeline: true);
+    @include size(100% 150px);
     @include transition(opacity .1s linear);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
     display: block;
-    height: 150px;
-    margin-bottom: $base-y;
-    width: 100%;
     position: relative;
 
     @include media($medium-screen-up) {
@@ -51,11 +46,13 @@
     &:hover {
       opacity: 1;
     }
+
     img {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
+      @include transform(translateY(-50%));
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
     }
   }
 }
