@@ -28,8 +28,8 @@
   padding: $base-y $base-x;
 
   @include media($medium-screen-up) {
-    @include span-columns(3 of 12);
     @include omega(4n);
+    @include span-columns(3 of 12);
   }
 
   a {
