@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Turtles</title>
+  <subtitle>Turtle subtitle</subtitle>
+  <id>http://i.like.turtles/</id>
+  <link href="http://i.like.turtles/"/>
+  <link href="http://i.like.turtles/feed.xml" rel="self"/>
+  <updated>2014-06-11T18:00:00-04:00</updated>
+  <author>
+    <name>Great Turtle</name>
+  </author>
+  <entry>
+    <title>Hello, World</title>
+    <link rel="alternate" href="http://i.like.turtles/2014/hello-world.html"/>
+    <id>http://i.like.turtles/2014/hello-world.html</id>
+    <published>2014-06-11T18:00:00-04:00</published>
+    <updated>2014-08-28T10:57:43-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Hello, world.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

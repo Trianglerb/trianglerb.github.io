@@ -6,6 +6,7 @@ page '/feed.xml', layout: false
 activate :syntax, line_numbers: true
 activate :autoprefixer
 activate :dotenv
+activate :directory_indexes
 
 set :markdown, fenced_code_blocks: true, smartypants: true, with_toc_data: true
 set :markdown_engine, :redcarpet
@@ -35,7 +36,6 @@ ignore '/calendar.html'
 
 configure :build do
   activate :relative_assets
-  activate :directory_indexes
   activate :asset_hash
   activate :minify_html, remove_input_attributes: false
   activate :minify_css
