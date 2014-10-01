@@ -27,19 +27,22 @@
   margin-bottom: $base-y;
   padding: $base-y $base-x;
 
+  @include media($medium-screen-down) {
+    @include omega(2n);
+    @include span-columns(6 of 12);
+  }
+
   @include media($medium-screen-up) {
     @include omega(4n);
     @include span-columns(3 of 12);
   }
 
   a {
-    @include size(100% 150px);
     @include transition(opacity .1s linear);
     display: block;
     position: relative;
 
     @include media($medium-screen-up) {
-      margin-bottom: 0;
       opacity: 0.8;
     }
 
@@ -48,11 +51,8 @@
     }
 
     img {
-      @include transform(translateY(-50%));
       display: block;
       margin: 0 auto;
-      position: relative;
-      top: 50%;
     }
   }
 }

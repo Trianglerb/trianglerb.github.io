@@ -10,5 +10,6 @@
 $medium-screen: em(640);
 $large-screen: em(860);
 
+$medium-screen-down: new-breakpoint(max-width $medium-screen - em(1));
 $medium-screen-up: new-breakpoint(min-width $medium-screen);
 $large-screen-up: new-breakpoint(min-width $large-screen);
