@@ -26,8 +26,9 @@ setDescription = (text)->
   eventOnPage("description").html(text)
 
 setDateTime = (event) ->
+  setEventText("month", event.month())
+  setEventText("day", event.day())
   setEventText("time", event.time())
-  setEventText("date", event.date())
 
 setVenueName = (name) ->
   setEventText("venue-name", name)
@@ -39,4 +40,4 @@ eventOnPage = (role) ->
   $("[data-role='event'] [data-role='#{role}']")
 
 showMeetup = ->
-  $(".event").show()
+  $("[data-role='event']").show()

@@ -1,14 +1,16 @@
 footer {
-  padding: $large-y 0;
+  @include padding($large-y null);
 
   p {
     color: $light-font-color;
-    text-align: center;
+
+    @include media($medium-screen-up) {
+      text-align: center;
+    }
   }
 
   a {
-    color: $base-font-color;
-    font-family: $serif;
-    font-style: italic;
+    color: $light-font-color;
+    font-weight: 800;
   }
 }

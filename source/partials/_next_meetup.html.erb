@@ -1,25 +1,42 @@
-<section class="event" data-role="event">
-  <div class="event-box">
-    <div class="event-information">
-      <h4>Join us at our next meetup</h4>
-      <p class="event-date" data-role="date">event date</p>
-      <span class="event-location">
-        <span data-role="time">event time</span> at <span data-role="venue-name">Venue name</span>
-      </span>
-      <h5 class="event-title" data-role="name">Meetup Name</h5>
-      <p class="event-description" data-role="description">Event Description</p>
-      <a href="#" class="event-button" data-role="rsvp-link">RSVP on Meetup</a>
-    </div>
+<section class="content-section next-meetup" data-role="event">
 
-    <div class="event-map">
-      <div class="embed-container">
-        <iframe
-          data-role="map"
-          src=""
-          width="600"
-          height="450"
-          frameborder="0"
-          style="border:0"></iframe>
+  <div class="container">
+    <h3 class="section-title">Join us at our next meetup</h3>
+    <p class="section-description">
+      We have monthly talks, occasional drinkups, and are active in community
+      events, like Rails Girls and RailsBridge Triangle.
+    </p>
+
+    <div class="event-box">
+      <div class="event-information">
+        <div class="event-date">
+          <span class="event-month" data-role="month">event month</span>
+          <span class="event-day" data-role="day">event day</span>
+        </div>
+
+        <div class="event-description">
+          <h5 class="event-title" data-role="name">Meetup Name</h5>
+          <p class="event-location">
+            <span data-role="time">event time</span> at
+            <span data-role="venue-name">Venue name</span>
+          </p>
+          <div data-role="description">
+            <p>Event Description</p>
+          </div>
+          <a href="#" data-role="rsvp-link">RSVP on Meetup</a>
+        </div>
+      </div>
+
+      <div class="event-map">
+        <div class="embed-container">
+          <iframe
+            data-role="map"
+            src=""
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0"></iframe>
+        </div>
       </div>
     </div>
   </div>

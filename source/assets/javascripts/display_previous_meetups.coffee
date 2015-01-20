@@ -7,7 +7,7 @@ window.displayPreviousMeetups = ->
     $.each events, (_index, event) ->
       element = firstEventListing().clone()
       updateEventInformation(element, event)
-      element.appendTo('.meetups')
+      element.appendTo("[data-role='past-meetups']")
       element.show()
 
 updateEventInformation = (element, event) ->
@@ -28,4 +28,4 @@ setRoleText = (element, role, text) ->
   element.find("[data-role='#{role}']").text(text)
 
 firstEventListing = ->
-  $($(".slide")[0])
+  $($("[data-role='past-meetup']")[0])

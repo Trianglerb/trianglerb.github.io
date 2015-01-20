@@ -1,8 +1,8 @@
 // Typography
-$sans-serif: 'Roboto', $helvetica;
-$serif: 'PT Serif', $georgia;
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$sans-serif: $helvetica;
+$serif: $georgia;
+$base-font-family: "proxima-nova", $sans-serif;
+$header-font-family: "adelle-sans", $sans-serif;
 
 // Sizes
 $base-font-size: 1em;
@@ -14,7 +14,7 @@ $base-border-radius: em(3);
 $slides-date-column-width: 8rem;
 
 // Colors
-$blue: #33aad9;
+$blue: #5bc4f1;
 $dark-gray: #333;
 $slate: #2e3641;
 $red:#d0464e;
@@ -32,7 +32,7 @@ $base-background-color: white;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$light-font-color: rgba($base-font-color, .7);
+$light-font-color: rgba($base-font-color, 0.75);
 $base-accent-color: $blue;
 
 // Link Colors
@@ -59,7 +59,7 @@ $form-border-color-hover: darken($base-border-color, 10);
 $form-border-color-focus: $base-accent-color;
 $form-border-radius: $base-border-radius;
 $form-box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-box-shadow-focus: $form-box-shadow;
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
 

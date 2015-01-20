@@ -26,8 +26,11 @@ class window.MeetupEvent
   time: ->
     @_time().format('h:mm a')
 
-  date: ->
-    @_time().format('MMM DD, YYYY')
+  month: ->
+    @_time().format('MMM')
+
+  day: ->
+    @_time().format('DD')
 
   monthYear: ->
     @_time().format('MMMM YYYY')

@@ -23,6 +23,7 @@ h2 {
 
 h3 {
   font-size: $base-font-size * 1.75; // 16 * 1.75 = 28px
+  font-weight: 200;
 }
 
 h4 {
@@ -85,5 +86,29 @@ cite {
 
   &:before {
     content: '\2014 \00A0';
+  }
+}
+
+.section-title {
+  font-size: em(22);
+  font-weight: 100;
+  margin-bottom: 0.25em;
+
+  @include media($medium-screen-up) {
+    font-size: em(42);
+    text-align: center;
+  }
+}
+
+.section-description {
+  font-size: em(14);
+  margin-bottom: 3em;
+  opacity: 0.75;
+
+  @include media($medium-screen-up) {
+    @include margin(null auto);
+    font-size: em(20);
+    max-width: $medium-screen;
+    text-align: center;
   }
 }

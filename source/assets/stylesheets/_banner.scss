@@ -1,38 +1,21 @@
-body {
-  background: $lighter-gray;
-}
-
 .banner {
-  background-size: cover;
-  background: image-url('banner-bg.jpg') 50% 50% no-repeat;
-  padding: $large-y 0;
+  @include padding($large-y null);
+  @include row;
 
   @include media($medium-screen-up) {
     padding-top: $large-y * 4;
     padding-bottom: $large-y * 4;
   }
 
-  h3 {
-    color: white;
-    font-size: em(32);
-    margin-bottom: $small-y;
-    text-align: center;
-
-    @include media($medium-screen-up) {
-      font-size: em(40);
-    }
-  }
-
   p {
-    color: white;
-    font-family: $serif;
-    font-size: em(17);
+    color: $light-font-color;
+    font-size: em(14);
     line-height: 1.8;
-    text-align: center;
 
     @include media($medium-screen-up) {
       font-size: em(24);
       line-height: 1.6;
+      text-align: center;
     }
 
     @include media($large-screen-up) {

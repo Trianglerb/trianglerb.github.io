@@ -1,12 +1,38 @@
 .submit-a-talk {
-  background: white;
-  padding: $large-y 0;
+  background: $triangle-red;
+  min-height: 100vh;
 
-  @include media($medium-screen-up) {
-    padding: ($large-y * 3) 0;
+  h3 {
+    color: #fff;
+    margin-bottom: 1em;
+  }
+
+  form {
+    background-color: #fff;
+    border-radius: $base-border-radius;
+    box-shadow: 0 1px 3px rgba(#000, 0.15);
+    padding: $base-y $base-x;
   }
 
   textarea {
     height: $large-y * 6;
+  }
+}
+
+.back-link {
+  @include position(absolute, 1em 1em null null);
+  color: rgba(#fff, 0.75);
+  font-size: $small-font-size;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  .thank-you & {
+    position: static;
+  }
+
+  &:hover,
+  &:focus {
+    color: #fff;
   }
 }

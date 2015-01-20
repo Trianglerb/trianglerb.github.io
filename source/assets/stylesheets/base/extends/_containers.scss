@@ -8,8 +8,3 @@
   margin: 0 auto;
   max-width: $medium-screen;
 }
-
-%wide-container {
-  @include outer-container;
-  max-width: em(1280);
-}

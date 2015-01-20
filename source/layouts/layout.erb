@@ -12,17 +12,13 @@
     <meta name="keywords" content="<%= keywords.join(',') %>">
     <meta name="description" content="<%= description %>">
     <meta name="author" content="<%= author %>">
+    <script src="//use.typekit.net/lia5wcl.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
     <%= stylesheet_link_tag 'main' %>
     <link rel="icon" type="image/ico" href="/assets/images/favicon.ico" />
   </head>
   <body>
-    <div class="wrapper">
-      <%= partial "header" %>
-
-      <%= yield %>
-
-      <%= partial "footer" %>
-    </div>
+    <%= yield %>
     <%= javascript_include_tag 'main' %>
   </body>
 </html>

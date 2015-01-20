@@ -1,12 +1,7 @@
 <header>
-  <% link_to '/' do %>
-    <div class="logo">
-      <%= image_tag 'logo.png' %>
-      <div class="logo-hgroup">
-        <h1>Triangle.rb</h1>
-        <h2>The triangle's ruby meetup</h2>
-      </div>
-    </div>
+  <% link_to "/", class: "logo" do %>
+    <%= image_tag 'logo.png' %>
+    <h1>Triangle<span class="extension">RB</span></h1>
   <% end %>
 
   <ul class="header-links">

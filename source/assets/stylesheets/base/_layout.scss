@@ -1,3 +1,7 @@
+body {
+  background: #fff;
+}
+
 .narrow-container {
   @extend %narrow-container;
 }
@@ -14,10 +18,14 @@
 
   iframe, object, embed {
     @include size(100%);
-    @include position(absolute, 0px 0 0 0px);
+    @include position(absolute, 0 0 0 0);
   }
 }
 
-.wrapper {
-  @extend %wide-container;
+.content-section {
+  @include padding($large-y null);
+
+  @include media($medium-screen-up) {
+    @include padding(($large-y * 2) null);
+  }
 }

@@ -1,23 +1,13 @@
 .sponsors {
   background: $slate;
-  padding-bottom: $large-y;
-  padding-top: $large-y;
+
+  .section-title,
+  .section-description {
+    color: white;
+  }
 
   ul {
     @extend %outer-container;
-    padding-top: $large-y;
-    padding-bottom: $large-y;
-  }
-
-  h4 {
-    color: rgba(white, .8);
-    margin-bottom: $small-y;
-  }
-
-  p {
-    color: white;
-    font-family: $serif;
-    font-style: italic;
   }
 }
 
