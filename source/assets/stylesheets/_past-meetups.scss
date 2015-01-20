@@ -2,6 +2,10 @@
   @include media($medium-screen-up) {
     padding-top: 0;
   }
+
+  ol {
+    margin-top: $large-y;
+  }
 }
 
 .past-meetup {

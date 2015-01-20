@@ -4,14 +4,17 @@ window.displayInformationForNextMeetup = ->
   meetup.loadEvents().done ->
     nextEvent = meetup.firstEvent()
 
-    setMapLocation(nextEvent.mapUrl())
-    setName(nextEvent.name())
-    setDescription(nextEvent.description())
-    setDateTime(nextEvent)
-    setVenueName(nextEvent.venueName())
-    setRsvpUrl(nextEvent.eventUrl())
+    if nextEvent.name()
+      setMapLocation(nextEvent.mapUrl())
+      setName(nextEvent.name())
+      setDescription(nextEvent.description())
+      setDateTime(nextEvent)
+      setVenueName(nextEvent.venueName())
+      setRsvpUrl(nextEvent.eventUrl())
 
-    showMeetup()
+      showMeetup()
+    else
+      showEmpty()
 
 setMapLocation = (url) ->
   eventOnPage("map").prop("src", url).load()
@@ -41,3 +44,6 @@ eventOnPage = (role) ->
 
 showMeetup = ->
   $("[data-role='event']").show()
+
+showEmpty = ->
+  $("[data-role='no-event']").show()

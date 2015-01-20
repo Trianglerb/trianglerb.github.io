@@ -1,5 +1,4 @@
 .next-meetup {
-  display: none;
   position: relative;
 
   &:after {
@@ -10,7 +9,7 @@
     z-index: -1;
 
     @include media($medium-screen-up) {
-      bottom: 18em;
+      bottom: 16em;
     }
   }
 
@@ -27,11 +26,38 @@
   background-color: white;
   border-top-left-radius: $base-border-radius;
   border-top-right-radius: $base-border-radius;
+  display: none;
 
   @include media($medium-screen-up) {
     @include margin(null auto);
     box-shadow: 0 3px 16px rgba(#000, 0.15);
   }
+
+  &.is-unscheduled {
+    border-bottom-left-radius: $base-border-radius;
+    border-bottom-right-radius: $base-border-radius;
+    font-size: 0.875em;
+    padding: ($large-y * 2) $small-x;
+    text-align: center;
+
+    @include media($medium-screen-up) {
+      @include padding(null $large-x);
+      font-size: 1em;
+    }
+
+    img {
+      @include size(em(128));
+      margin-bottom: $base-y;
+    }
+  }
+}
+
+.unscheduled-title {
+  margin-bottom: 0.25em;
+}
+
+.unscheduled-description {
+  color: $light-font-color;
 }
 
 .event-information {
