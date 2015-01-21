@@ -8,4 +8,4 @@
 # Deploying
 * Do work, commit, PR, merge to master
 * middleman build
-* middleman deploy
+* git push heroku master
