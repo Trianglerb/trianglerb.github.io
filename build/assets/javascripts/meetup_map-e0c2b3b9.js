@@ -1,1 +1,0 @@
-(function(){window.MeetupMap=function(){function e(e){this.address=e}return e.prototype.MAPS_API_KEY="AIzaSyA7wI0GezpAtXC4DPXQg5kEXYrKg4vC8Hc",e.prototype.url=function(){return"https://www.google.com/maps/embed/v1/place?q="+this._encodedAddress()+"&key="+this.MAPS_API_KEY},e.prototype._encodedAddress=function(){return encodeURIComponent(this.address)},e}()}).call(this);
