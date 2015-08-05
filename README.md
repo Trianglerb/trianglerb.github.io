@@ -6,6 +6,10 @@
 * enjoy!
 
 # Deploying
-* Do work, commit, PR, merge to master
-* middleman build
-* git push heroku master
+```
+middleman build
+cd build
+git remote add gh-pages git@github.com:Trianglerb/trianglerb.github.io.git
+cd ..
+middleman deploy
+```
