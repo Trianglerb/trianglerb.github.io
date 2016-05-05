@@ -44,9 +44,11 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.remote = "gh-pages"
-  deploy.branch = "master"
+  deploy.method = :rsync
+  deploy.user = 'bemathis'
+  deploy.host = 'brandonmathis.me'
+  deploy.path = '/var/www/triangleruby'
+  deploy.port = '44'
 end
 
 configure :development do
