@@ -71,13 +71,7 @@ header {
   }
 
   li {
-    float: left;
-    padding: 1.25em 0;
-    margin-left: $base-x;
-
-    &:first-child {
-      margin-left: 0;
-    }
+    text-align: center;
   }
 
   a {
