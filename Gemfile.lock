@@ -109,6 +109,8 @@ GEM
     middleman-dotenv (1.1.0)
       dotenv (~> 0.7)
       middleman-core (>= 3.2)
+    middleman-gh-pages (0.4.1)
+      rake (> 0.9.3)
     middleman-imageoptim (0.1.4)
       image_optim (~> 0.9.1)
       middleman-core (>= 3.0)
@@ -189,6 +191,7 @@ DEPENDENCIES
   middleman-blog
   middleman-deploy
   middleman-dotenv
+  middleman-gh-pages
   middleman-imageoptim
   middleman-livereload
   middleman-minify-html
@@ -198,4 +201,4 @@ DEPENDENCIES
   redcarpet
 
 BUNDLED WITH
-   1.12.5
+   1.16.4
