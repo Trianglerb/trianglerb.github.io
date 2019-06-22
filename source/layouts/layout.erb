@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <% page_data = current_page.data %>
-    <% keywords = page_data.keywords ? page_data.keywords : data.seo.keywords %>
-    <% description = page_data.description ? page_data.description : data.seo.description %>
-    <% author = page_data.author ? page_data.author : data.seo.author %>
-    <title><%= page_data.title %></title>
+    <% title = "💎 Triangle Ruby Meetup 💎" %>
+    <title><%= title %></title>
     <meta content="width=device-width" name="viewport">
-    <meta name="keywords" content="<%= keywords.join(',') %>">
-    <meta name="description" content="<%= description %>">
-    <meta name="author" content="<%= author %>">
+    <meta name="keywords" content="Triangle Ruby Meetup Raleigh North Carolina NC Durham Chappel Hill Technology">
+    <meta name="description" content="The NC Triangle's premier meetup for Ruby enthusiasts">
+
+    <meta property="og:title" content="<%= title %>" />
+    <meta property="og:url" content="https://triangleruby.com" />
+    <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48493505-2"></script>
