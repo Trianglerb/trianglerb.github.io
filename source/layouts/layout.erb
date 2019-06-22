@@ -12,6 +12,17 @@
     <meta name="keywords" content="<%= keywords.join(',') %>">
     <meta name="description" content="<%= description %>">
     <meta name="author" content="<%= author %>">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48493505-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-48493505-2');
+    </script>
+
     <script src="//use.typekit.net/lia5wcl.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <%= stylesheet_link_tag 'main' %>
