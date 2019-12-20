@@ -153,7 +153,7 @@ GEM
       activesupport (>= 3.1)
     progress (3.0.1)
     ptools (1.2.6)
-    rack (1.6.11)
+    rack (1.6.12)
     rack-livereload (0.3.16)
       rack
     rack-test (1.1.0)
