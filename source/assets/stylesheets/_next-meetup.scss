@@ -8,9 +8,9 @@
     background: image-url('banner-bg.jpg') 50% 50% no-repeat;
     z-index: -1;
 
-    @include media($medium-screen-up) {
-      bottom: 16em;
-    }
+    // @include media($medium-screen-up) {
+    //   bottom: 16em;
+    // }
   }
 
   .section-title,
